@@ -1,0 +1,35 @@
+# github.com/andybrewer/mack v0.0.0-20220307193339-22e922cc18af
+## explicit; go 1.17
+github.com/andybrewer/mack
+# github.com/cloudinary/cloudinary-go v1.6.0
+## explicit; go 1.15
+github.com/cloudinary/cloudinary-go
+github.com/cloudinary/cloudinary-go/api
+github.com/cloudinary/cloudinary-go/api/admin
+github.com/cloudinary/cloudinary-go/api/admin/metadata
+github.com/cloudinary/cloudinary-go/api/admin/search
+github.com/cloudinary/cloudinary-go/api/uploader
+github.com/cloudinary/cloudinary-go/asset
+github.com/cloudinary/cloudinary-go/config
+github.com/cloudinary/cloudinary-go/internal/signature
+github.com/cloudinary/cloudinary-go/logger
+github.com/cloudinary/cloudinary-go/transformation
+# github.com/creasty/defaults v1.5.2
+## explicit; go 1.13
+github.com/creasty/defaults
+# github.com/flytam/filenamify v1.0.0
+## explicit; go 1.13
+github.com/flytam/filenamify
+# github.com/google/uuid v1.3.0
+## explicit
+github.com/google/uuid
+# github.com/gorilla/schema v1.2.0
+## explicit
+github.com/gorilla/schema
+# github.com/hugolgst/rich-go v0.0.0-20210925091458-d59fb695d9c0
+## explicit; go 1.17
+github.com/hugolgst/rich-go/client
+github.com/hugolgst/rich-go/ipc
+# gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce
+## explicit
+gopkg.in/natefinch/npipe.v2
