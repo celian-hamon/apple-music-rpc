@@ -88,10 +88,8 @@ func (player *Player) getArtwork() {
 	os.Rename("tmp.jpg", output+".jpg")
 
 	resp, err := cld.Upload.Upload(context.Background(), output+".jpg", uploader.UploadParams{
-		Async:          false,
 		UseFilename:    true,
 		UniqueFilename: false,
-		Type:           "image",
 	})
 
 	if err != nil {

@@ -1,4 +1,4 @@
-module caca
+module apple-music-rpc
 
 go 1.17
 
