@@ -43,7 +43,7 @@ type Player struct {
 	AlbumUrl string
 }
 
-//go:embed "music.scpt"
+//go:embed scripts/music.scpt
 var musicScript string
 
 func getPlayer() Player {
@@ -73,7 +73,7 @@ func getPlayer() Player {
 	return player
 }
 
-//go:embed "art.scpt"
+//go:embed scripts/art.scpt
 var artScript string
 
 func (player *Player) getArtwork() {
@@ -119,7 +119,7 @@ func loadConfig() Config {
 	return payload
 }
 
-//go:embed "vol.scpt"
+//go:embed scripts/vol.scpt
 var volScript string
 
 func getVol() string {
@@ -207,7 +207,6 @@ func setRpc(player Player) {
 	filename = strings.Replace(filename, " ", "_", -1)
 
 	for _, asset := range searchResult.Assets {
-		fmt.Println("Searching for : '" + filename + "'")
 		if strings.Contains(asset.PublicID, filename) {
 			player.AlbumUrl = asset.SecureURL
 			break
