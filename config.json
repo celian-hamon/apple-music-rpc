@@ -1,0 +1,8 @@
+{
+    "cloudConfig":{
+        "cloudId":"",
+        "cloudToken":"",
+        "cloudTokenSecret":""
+    },
+    "discordAppId":"951137898160332900" 
+}
