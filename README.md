@@ -1,5 +1,5 @@
 <h1 align="center"> Apple Music Rich Presence </h1>
-<p align="center"><img src="https://github.com/celian-hamon/apple-music-rpc/actions/workflows/go.yml/badge.svg"></p>
+<p align="center"><img src="https://github.com/celian-hamon/apple-music-rpc/actions/workflows/go-build.yml/badge.svg"></p>
 A Rich Presence for discord wich display apple music information as your status on discord
 <br>
 <h2>Requirements : </h2>
