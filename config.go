@@ -10,11 +10,17 @@ import (
 //go:embed config.json
 var jsonFile embed.FS
 
-func loadConfig() Config {
+type Config struct {
+	ConfigCloud  ConfigCloud `json:"cloudConfig"`
+	DiscordAppId string      `json:"discordAppId"`
+	Setup        bool        `json:"setup"`
+}
+
+func (Config *Config) loadConfig() {
 
 	bytes, _ := jsonFile.ReadFile("config.json")
-	var payload Config
-	err := json.Unmarshal(bytes, &payload)
+
+	err := json.Unmarshal(bytes, &Config)
 	if err != nil {
 		alert := mack.AlertOptions{
 			Title:   "Apple Music RPC",
@@ -23,6 +29,4 @@ func loadConfig() Config {
 		}
 		mack.AlertBox(alert)
 	}
-
-	return payload
 }

@@ -9,12 +9,6 @@ import (
 	"github.com/hugolgst/rich-go/client"
 )
 
-type Config struct {
-	ConfigCloud  ConfigCloud `json:"cloudConfig"`
-	DiscordAppId string      `json:"discordAppId"`
-	Setup        bool        `json:"setup"`
-}
-
 type ConfigCloud struct {
 	CloudId          string `json:"cloudId"`
 	CloudToken       string `json:"cloudToken"`
@@ -24,7 +18,8 @@ type ConfigCloud struct {
 var cld *cloudinary.Cloudinary
 
 func main() {
-	config := loadConfig()
+	var config Config
+	config.loadConfig()
 	setup()
 	lastState := ""
 	lastTitle := ""
