@@ -1,8 +1,9 @@
 {
     "cloudConfig":{
-        "cloudId":"",
-        "cloudToken":"",
-        "cloudTokenSecret":""
+        "cloudId":"dgpr0xv6x",
+        "cloudToken":"942328836136963",
+        "cloudTokenSecret":"HPmRMBAAn4k-Z9ZVz4SM-xyr2lk"
     },
-    "discordAppId":"951137898160332900" 
+    "discordAppId":"951137898160332900",
+    "setup":false
 }

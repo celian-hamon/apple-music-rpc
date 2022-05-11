@@ -7,11 +7,19 @@
     <string>com.apple-music-rpc</string>
     <key>ServiceDescription</key>
     <string>Apple music discord rich presence</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/cece/Code/go-apple-music-rpc</string>
     <key>ProgramArguments</key>
     <array>             
-        <string>/Users/cece/Code/go-apple-music-rpc/caca</string>
+        <string>./apple-music-rpc</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/tmp/mycommand.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/mycommand.out</string>
 </dict>
 </plist>
