@@ -57,7 +57,7 @@ func main() {
 				lastState, lastTitle = player.State, player.Title
 				fmt.Printf("State Change now : %s\n", player.State)
 			}
-			time.Sleep(time.Second * 1)
+			time.Sleep(time.Second * 2)
 		}
 	}
 }

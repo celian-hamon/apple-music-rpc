@@ -66,7 +66,7 @@ func (player *Player) setRpc() {
 	if player.State == "playing" {
 		client.SetActivity(client.Activity{
 			Details:    player.State + " " + player.Title,
-			State:      "by " + player.Artist + " on " + player.Album,
+			State:      "by " + player.Artist,
 			LargeImage: cover,
 			LargeText:  player.Album,
 			SmallImage: "https://media.giphy.com/media/3o6gDP9oLOGtBMMBSU/giphy.gif",
@@ -87,7 +87,7 @@ func (player *Player) setRpc() {
 		now = time.Now()
 		client.SetActivity(client.Activity{
 			Details:    player.State + " " + player.Title,
-			State:      "by " + player.Artist + " on " + player.Album,
+			State:      "by " + player.Artist,
 			LargeImage: cover,
 			LargeText:  player.Album,
 			SmallImage: "https://media.giphy.com/media/UUQ7nCPmqF9mY04Co0/giphy.gif",

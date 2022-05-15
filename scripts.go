@@ -72,7 +72,6 @@ func getVol() string {
 	if err != nil {
 		fmt.Println(err)
 	}
-	liste := strings.Split(out.String(), ",")
 
-	return liste[0][len(liste[0])-2:]
+	return strings.Split(strings.Split(out.String(), ",")[0], ":")[1]
 }
