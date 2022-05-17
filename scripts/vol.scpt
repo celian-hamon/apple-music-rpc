@@ -1,1 +1,0 @@
-return (get volume settings)
